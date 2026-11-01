@@ -20,3 +20,6 @@ def test_get_grade_category():
     assert get_grade_category(14.0) == "Good"
     assert get_grade_category(10.5) == "Average"
     assert get_grade_category(8.0) == "Fail"
+
+def test_passing_grade_is_exactly_ten():
+    assert is_passing(10) is True
